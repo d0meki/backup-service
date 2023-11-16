@@ -15,7 +15,7 @@ class Server {
     middlewares() {
         //CORS
         // this.app.use(cors())
-        const whiteList = ['http://127.0.0.1:8000'];
+        const whiteList = ['http://127.0.0.1:8000','http://20.51.233.135/'];
         this.app.use(cors({
             origin: whiteList
         }))
